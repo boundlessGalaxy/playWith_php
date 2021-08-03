@@ -1,0 +1,63 @@
+.contact {
+    font-size: 1.3em;
+    margin-top: $padding;
+
+    .form-group {
+        margin-bottom: rem(30);
+    }
+
+    label:not(.rd-label){
+        display: block;
+        margin-bottom: rem(10);
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        font-size: inherit;
+    }
+
+    input:not([type="radio"]):not([type="submit"]){
+        padding: rem(6);
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        background-color: #ebebeb;
+        border: 1px solid #ccc;
+    }
+
+    .radio-group {
+        margin-bottom: rem(10);
+    }
+
+    .rd-label {
+        position: relative;
+        top: 3px;
+    }
+
+
+    textarea {
+        padding: rem(6);
+        display: block;
+        width: 100%;
+        max-width: 772px;
+        min-height: 300px;
+    }
+
+    input[type="submit"] {
+        background: #3498db;
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        border-radius: 6px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+
+        #{$hover} {
+            background: #3cb0fd;
+            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        }
+
+      }
+      
+}

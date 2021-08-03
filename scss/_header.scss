@@ -1,0 +1,29 @@
+header {
+    $header-height: 62px !global;
+    min-height: $header-height;
+    border-left: 18px solid $site-red;
+    border-bottom: 2px solid $site-red;
+    @include flex-layout-row;
+    align-items: center;
+
+    .header-row-01 {
+        @include flex-layout-row;
+        align-items: center;
+    }
+
+    .logo {
+        @include flatten;
+        padding-left: 20px;
+        a {
+            @include plain-link($site-black);
+        }
+    }
+
+    @include mq($tabletPortrait){
+        display: block;
+        .header-row-01 {
+            height: $header-height;
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+.wrapper {
+    max-width: $site-width;
+    background-color: $site-white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    @include center;
+}

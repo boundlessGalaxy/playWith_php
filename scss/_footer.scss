@@ -1,0 +1,21 @@
+footer {
+    background-color: lighten($site-black, 10);
+    color: $site-white;
+    padding: $padding;
+    
+    p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    @include mq($phoneLandscape) {
+        @include flex-layout-row;
+        align-items: center;
+    
+        p {
+            @include flatten;
+        }
+    
+    }
+
+}
